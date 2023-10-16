@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <title>Калькулятор</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link">Обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a href="./calc.html" class="nav__link">Калькулятор</a>
+          </li>
+          <li class="nav__item">
+            <a href="./slider.html" class="nav__link">Слайдер</a>
+          </li>
+          <li class="nav__item">
+            <a href="./cart.html" class="nav__link">Корзина</a>
+          </li>
+          <li class="nav__item">
+            <a href="./test.html" class="nav__link">Тест</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="calc">
+          <div class="calc__expression">0</div>
+          <div class="calc__result">0</div>
+          <div class="calc__btns">
+            <ul class="calc__btns__row upper__row">
+              <li class="calc__btn1" id="deleteAll">AC</li>
+              <li class="calc__btn1" id="deleteOne">
+                <img src="../img/delete.png" alt="delete" />
+              </li>
+            </ul>
+            <ul class="calc__btns__row calc__operations__row">
+              <li class="calc__btn">/</li>
+              <li class="calc__btn">*</li>
+              <li class="calc__btn">-</li>
+              <li class="calc__btn">+</li>
+            </ul>
+            <ul class="calc__btns__row">
+              <li class="calc__btn">7</li>
+              <li class="calc__btn">8</li>
+              <li class="calc__btn">9</li>
+            </ul>
+            <ul class="calc__btns__row">
+              <li class="calc__btn">4</li>
+              <li class="calc__btn">5</li>
+              <li class="calc__btn">6</li>
+            </ul>
+            <ul class="calc__btns__row">
+              <li class="calc__btn">1</li>
+              <li class="calc__btn">2</li>
+              <li class="calc__btn">3</li>
+            </ul>
+            <ul class="calc__btns__row">
+              <li class="calc__btn">0</li>
+              <li class="calc__btn">.</li>
+              <li class="calc__btn">=</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/calc.js"></script>
+  </body>
+</html>
