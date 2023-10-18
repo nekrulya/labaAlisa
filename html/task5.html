@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Слайдер</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Задание 5</title>
   </head>
   <body class="body">
     <div class="container">
@@ -33,21 +33,19 @@
           </li>
         </ul>
       </nav>
-      <div class="content">
-        <div class="slider-container">
-          <div id="slider" class="slider">
-            <img src="../img/1.jpg" alt="Image 1" class="slider-img" />
-            <img src="../img/2.jpg" alt="Image 2" class="slider-img" />
-            <img src="../img/3.jpg" alt="Image 3" class="slider-img" />
-            <img src="../img/4.jpg" alt="Image 4" class="slider-img" />
-          </div>
-          <div class="slider__btns">
-            <button id="prevBtn" class="slider-btn">Назад</button>
-            <button id="nextBtn" class="slider-btn">Вперед</button>
-          </div>
+      <div class="content carousel__content">
+        <button id="startBtn">Запустить карусель</button>
+
+        <div class="logos">
+          <img class="logos__img" src="../img/horror.png" />
+          <img class="logos__img" src="../img/film-director.png" />
+          <img class="logos__img" src="../img/mask.png" />
+          <img class="logos__img" src="../img/spotlight.png" />
+          <img class="logos__img" src="../img/video-camera.png" />
         </div>
+        <button id="stopBtn">Остановить карусель</button>
       </div>
     </div>
-    <script src="../js/slider.js"></script>
+    <script src="../js/task5.js"></script>
   </body>
 </html>

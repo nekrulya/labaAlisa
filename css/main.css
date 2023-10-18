@@ -212,6 +212,10 @@
   right: 10px;
 }
 
+.cart__container {
+  max-width: 1300px;
+}
+
 .cards {
   width: 100%;
   display: flex;
@@ -221,7 +225,7 @@
 }
 
 .card {
-  width: 233px;
+  width: 280px;
   height: 450px;
 
   display: flex;
@@ -274,7 +278,7 @@
 }
 
 .cart {
-  width: 600px;
+  width: 540px;
   height: 800px;
 
   background-color: rgba(255, 255, 255, 0.8);
@@ -304,6 +308,23 @@
   font-weight: 500;
 }
 
+.card__quantity {
+  display: flex;
+  width: 50px;
+}
+
+.card__quantity__input {
+  border: 1px solid black;
+  width: 30px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.card__quantity__btn {
+  cursor: pointer;
+  user-select: none;
+}
+
 .card__btn {
   background-color: rgb(255, 240, 230);
   color: rgb(209, 87, 0);
@@ -312,6 +333,7 @@
   font-weight: 500;
 
   cursor: pointer;
+  user-select: none;
 }
 
 .order {
@@ -327,11 +349,10 @@
 }
 
 .order__image {
-  width: 100px;
+  width: 80px;
 }
 
-.order__title {
-}
+.order__title {}
 
 .order__quantity {
   position: absolute;
@@ -419,4 +440,95 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.task4__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.images_to_swap {
+  margin-bottom: 50px;
+}
+
+.image_to_swap {
+  width: 150px;
+}
+
+.taks4__btns {
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#swapStart,
+#swapEnd {
+  border: 1px solid black;
+  border-radius: 10px;
+
+  margin-right: 20px;
+  padding: 8px 10px;
+}
+
+.doSwap {
+  border: 1px solid black;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.logos {
+  position: relative;
+  margin-top: 300px;
+  left: 80px;
+  width: 300px;
+  height: 300px;
+}
+
+.logos__img {
+  position: absolute;
+  width: 140px;
+  height: auto;
+}
+
+#startBtn,
+#stopBtn {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#startBtn {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+
+#stopBtn {
+  position: absolute;
+  top: 200px;
+  right: 400px;
+}
+
+.acceptResult {
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+
+  margin-top: 20px;
+
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 8px 10px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.acceptResult:hover {
+  transform: scale(1.1);
 }

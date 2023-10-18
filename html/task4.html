@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Слайдер</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Задание 4</title>
   </head>
   <body class="body">
     <div class="container">
@@ -33,21 +33,20 @@
           </li>
         </ul>
       </nav>
-      <div class="content">
-        <div class="slider-container">
-          <div id="slider" class="slider">
-            <img src="../img/1.jpg" alt="Image 1" class="slider-img" />
-            <img src="../img/2.jpg" alt="Image 2" class="slider-img" />
-            <img src="../img/3.jpg" alt="Image 3" class="slider-img" />
-            <img src="../img/4.jpg" alt="Image 4" class="slider-img" />
-          </div>
-          <div class="slider__btns">
-            <button id="prevBtn" class="slider-btn">Назад</button>
-            <button id="nextBtn" class="slider-btn">Вперед</button>
-          </div>
+      <div class="content task4__content">
+        <div class="images_to_swap">
+            <img class='image_to_swap' src="../img/beggar.png" alt="" id="1">
+            <img class='image_to_swap' src="../img/charity.png" alt="" id="2">
+            <img class='image_to_swap' src="../img/donation.png" alt="" id="3">
+            <img class='image_to_swap' src="../img/medicine.png" alt="" id="4">
+            <img class='image_to_swap' src="../img/cat.png" alt="" id="5">
         </div>
-      </div>
+        <div class="taks4__btns">
+            <input type="text" id="swapStart">
+            <input type="text" id="swapEnd">
+            <button class="doSwap">Поменять</button>
+        </div>
     </div>
-    <script src="../js/slider.js"></script>
+    <script src="../js/task4.js"></script>
   </body>
 </html>

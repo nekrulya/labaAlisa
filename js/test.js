@@ -33,7 +33,7 @@ const checkAnwsers = (choosedAnswers, questions) => {
     }
   }
   const cont = document.querySelector(".tasks");
-  cont.innerHTML = `<p class="rigthAnswersOutput">Правильных ответов: ${counter}</p>`;
+  cont.innerHTML = `<p class="rigthAnswersOutput">Правильных ответов: ${counter}</p><div class="acceptResult" onclick="location.reload(); return false;">Принять результат</div></div>`;
 };
 
 const tasks = document.querySelectorAll(".task");

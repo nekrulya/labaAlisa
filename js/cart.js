@@ -57,10 +57,11 @@ for (let card of cards) {
     const order = {};
     order.title = card.querySelector(".card__title").textContent;
     order.image = card.querySelector(".card__image").getAttribute("src");
+    let quant = card.querySelector(".card__quantity__input").value;
     if (orders.filter((item) => item.title === order.title).length > 0) {
-      orders.filter((item) => item.title === order.title)[0].quantity++;
+      orders.filter((item) => item.title === order.title)[0].quantity += +quant;
     } else {
-      order.quantity = 1;
+      order.quantity = +quant;
       order.price = +card
         .querySelector(".card__price")
         .textContent.split(" ")[0];
@@ -69,4 +70,17 @@ for (let card of cards) {
     console.log(orders);
     updateCart();
   });
+  const otherBtns = card.querySelectorAll(".card__quantity__btn");
+  for (let btn of otherBtns) {
+    btn.addEventListener("click", function (e) {
+      console.log(e);
+      let quant = card.querySelector(".card__quantity__input").value;
+      if (e.target.textContent === "-" && quant > 1) {
+        quant--;
+      } else if (e.target.textContent === "+") {
+        quant++;
+      }
+      card.querySelector(".card__quantity__input").value = quant;
+    });
+  }
 }
